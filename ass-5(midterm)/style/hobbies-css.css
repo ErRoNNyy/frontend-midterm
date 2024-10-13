@@ -1,0 +1,237 @@
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    margin: 20px;
+    max-width: 1920px;
+}
+.nav-buttons{
+    display: flex;
+    justify-content: end;
+    gap: 50px;
+    padding: 20px;
+    margin: 30px;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 2vw;
+}
+.nav-buttons a{
+    color: #1F2F16;
+    transition: color 0.4s ease-in-out;
+}
+.nav-buttons a:hover {
+    color: #87cefa;
+}
+.nav-buttons a.active{
+    color:#747e8b;
+}
+.hobbies-main{
+    font-family: "Afacad Flux", sans-serif;
+}
+.hobbies-title{
+    margin-top: 50px;
+    font-size: 5vw;
+    text-align: center;
+    font-family: "Afacad Flux", sans-serif;
+    flex-wrap: wrap;
+}
+.hobbies-minititle{
+    margin-top: 20px;
+    font-size: 3vw;
+    text-align: center;
+    margin-bottom: 100px;
+    font-family: "Afacad Flux", sans-serif;
+    flex-wrap: wrap;
+}
+.hobbies-list{
+    display: flex;
+    gap: 20px;
+}
+.hobbies-elements img {
+    width: 100%;
+    width: 450px;
+    height: 598px;
+    border-radius: 10px;
+    transition: box-shadow 1s ease-in-out, filter 1s ease-in-out;
+    box-shadow: 0 0 15px rgba(135, 206, 250, 0.8);
+}
+.hobbies-elements img:hover {
+    transform: scale(1.05);
+}
+.hobbies-elements{
+    width: 100%;
+    width: 800px;
+}
+
+.hobbies-minititle span{
+    color: red;
+}
+.hobbies-gallery span{
+    color: red;
+}
+
+.hobbies-description{
+    font-size: 3vw;
+}
+.hobbies-explain{
+    font-family: "Afacad Flux", sans-serif;
+    margin-top: 250px;
+    width: fit-content;
+    margin-bottom: 100px;
+}
+.hobby-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hobby-first{
+    display: flex;
+    text-align: center;
+    gap: 50px;
+}
+
+.hobby-second{
+    display: flex;
+    text-align: center;
+    gap: 50px;
+}
+.hobby-third{
+    display: flex;
+    text-align: center;
+    gap: 50px;
+}
+.hobbies-content{
+    display: flex;
+    flex-direction: column;
+    gap: 300px;
+}
+.hobby-title{
+    font-size: 5vw;
+    font-weight: 700;
+}
+.hobby-love{
+    font-size: 2vw;
+}
+.hobbies-content img{
+    height: 410px;
+    width: 514px;
+    border-radius: 10px;
+    transition: transform 0.4s ease; 
+}
+
+.hobbies-content img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgb(12, 156, 24);
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger-line{
+    width:12px;
+    height: 3px;
+    background-color: #000000;
+    transition: background-color 0.4s ease, transform 0.4s ease;
+}
+
+@media(max-width:1440px){
+    .hobbies-elements img {
+        width: 100%;
+        width: 350px;
+        height: 498px;
+    }
+}
+@media (max-width:1148px){
+    .hobbies-elements img {
+        width: 100%;
+        width: 300px;
+        height: 458px;
+    } 
+}
+@media(max-width:1017px){
+    .hobbies-elements img {
+        width: 100%;
+        width: 250px;
+        height: 408px;
+    } 
+}
+@media(max-width:868px){
+    .hobbies-elements img {
+        width: 100%;
+        width: 200px;
+        height: 358px;
+    } 
+}
+@media(max-width:600px){
+    .hobbies-title{
+        font-size: 7vw;
+    }
+
+    .hobbies-content img{
+        height: 410px;
+        width: 514px;
+        border-radius: 10px;
+        transition: transform 0.4s ease; 
+    }
+    .hobby-title{
+        font-size: 10vw;
+    }
+    .hobby-love{
+        font-size: 5vw;
+    }
+    .hobbies-list{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .hobbies-elements img {
+        width: 100%;
+        width: 450px;
+        height: 598px;
+    }
+    .hobby-first{
+        flex-wrap: wrap;
+    }
+    .hobby-second{
+        flex-wrap: wrap;
+    }
+    .hobby-third{
+        flex-wrap: wrap;
+    }
+
+}
+@media(max-width:425px){
+    .hobbies-title{
+        font-size: 9vw;
+        margin-left: 50px;
+    }
+    .hobbies-minititle{
+        font-size: 5vw;
+        margin-left: 50px;
+    }
+    .burger {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .nav-buttons {
+        display: none;
+    }
+    .edu-title{
+        margin-top: -100px;
+    }
+
+    .burger.active + .nav-buttons {
+        display: flex;
+    }
+
+    .burger:hover .burger-bar {
+        background-color: #87cefa;
+    }
+}

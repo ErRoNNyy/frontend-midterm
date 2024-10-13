@@ -1,0 +1,237 @@
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    margin: 20px;
+    max-width: 1920px;
+}
+body{
+    font-family: "Space Grotesk", sans-serif;
+}
+.nav-buttons{
+    display: flex;
+    justify-content: end;
+    gap: 50px;
+    padding: 20px;
+    margin: 30px;
+    font-size: 1.5vw;
+}
+.nav-buttons a{
+    color: #1F2F16;
+    transition: color 0.4s ease-in-out;
+}
+.nav-buttons a:hover {
+    color: #87cefa;
+}
+.nav-buttons a.active{
+    color:#006eff;
+}
+.contacts-main{
+    margin-top: 100px;
+}
+.contacts-title{
+    font-size: 3vw;
+    text-align: center;
+}
+.contacts-description {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.contacts-description img{
+    width: 100%;
+    width: 200px;
+    height: 100%;
+    height: 200px;
+    border-radius: 50%;
+    transition: box-shadow 1s ease-in-out, filter 1s ease-in-out;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+}
+
+.contacts-description img:hover {
+    box-shadow: 0 0 25px rgba(0, 123, 255, 0.8);
+    filter: brightness(1.2);
+}
+
+.contacts-description img {
+    animation: icon-animation 2s ease-in-out infinite alternate;
+}
+
+@keyframes icon-animation {
+    0% {
+        box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 25px rgba(0, 123, 255, 0.8);
+    }
+}
+
+.telega{
+    width: 100%;
+    width: 300px;
+}
+
+.form{
+    margin-top: 150px;
+}
+.form-fields{
+    margin-top: 150px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 15px;
+}
+.message{
+    width: 300px;
+    padding: 8px;
+    font-size: 1vw;
+}
+.name{
+    width: 300px; 
+    padding: 8px; 
+    font-size: 1vw;
+}
+.email{
+    width: 300px;
+    padding: 8px;
+    font-size: 1vw;
+}
+.submit-button{
+    padding: 10px 20px;
+    font-size: 1vw;
+    background-color: #1F2F16;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.location{
+    text-align: center;
+    margin-top: 150px;
+}
+.map-title{
+    margin-bottom: 50px;
+    font-size: 5vw;
+}
+.map{
+    border: 3px black solid;
+}
+.meme{
+    margin-top: 50px;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger-line{
+    width:12px;
+    height: 3px;
+    background-color: #000000;
+    transition: background-color 0.4s ease, transform 0.4s ease;
+}
+
+@media(max-width:1214px){
+    .map{
+        width: 1000px;
+        height: 800px;
+    }
+}
+
+@media(max-width:1045px){
+    .map{
+        width: 800px;
+        height: 600px;
+    }
+}
+
+@media(max-width:839px){
+    .map{
+        width: 600px;
+        height: 400px;
+    }
+}
+
+@media(max-width:707px){
+    .contacts-description img{
+        width: 100%;
+        width: 150px;
+        height: 100%;
+        height: 150px;
+    }
+}
+
+@media(max-width:638px){
+    .map{
+        width: 400px;
+        height: 200px;
+    }
+}
+
+@media(max-width:558px){
+    .contacts-description img{
+        width: 100%;
+        width: 100px;
+        height: 100%;
+        height: 100px;
+    }
+}
+
+@media(max-width:447px){
+    .meme img{
+        width: 300px;
+        height: 500px;
+    }
+}
+
+@media(max-width:430px){
+
+    .contacts-title{
+        font-size: 8vw;
+    }
+
+    .contacts-description img{
+        width: 100%;
+        width: 50px;
+        height: 100%;
+        height: 50px;
+    }
+
+    .map{
+        width: 200px;
+        height: 100px;
+    }
+
+    .burger {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .nav-buttons {
+        display: none;
+    }
+
+
+    .burger.active + .nav-buttons {
+        display: flex;
+    }
+
+    .burger:hover .burger-bar {
+        background-color: #87cefa;
+    }
+}
+
+@media(max-width:332px){
+    .meme img{
+        width: 180px;
+        height: 300px;
+    }
+}
+
